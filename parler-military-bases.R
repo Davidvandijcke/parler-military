@@ -44,6 +44,8 @@ intersectParler <- function(cbg_stacked, parler, split = 100, id = "geoid") {
                          })
     pnts$id <- unlist(lapply(intersected, 
                              function(x) if(identical(x,character(0))) NA else x))
+      
+      
     if (length(intersected) == 0)
       pnts$id <- NA
     pnts_out <- rbind(pnts_out, pnts)
@@ -65,12 +67,13 @@ military <- read_sf(file.path(dir, 'data', 'tl_2019_us_mil')) %>%
 # intersect
 mil_out <- intersectParler(military, parler, split = 50, id = "areaid") 
 
+parler_mil <- cbind(parler[,c("Timestamp", "ID")], mil_out)
 
 # write to file
-fwrite(mil_out, file.path(dir, 'data', 'parler-military-intersected.csv.gz'))
+fwrite(parler_mil, file.path(dir, 'data', 'parler-military-intersected.csv.gz'))
 
 # only the ones from military bases
-mil_out_true <- mil_out[!is.na(id)]
+parler_mil_true <- parler_mil[!is.na(id)]
 
-fwrite(mil_out_true, file.path(dir, 'data', 'parler-from-military.csv'))
+fwrite(parler_mil_true, file.path(dir, 'data', 'parler-from-military.csv'))
 
