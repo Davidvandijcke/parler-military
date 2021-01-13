@@ -8,4 +8,4 @@ Code to produce the figures and underlying data included. Just open the .Rproj a
 
 Intersected Parler file: [parler-military-intersected.csv.gz](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-military-intersected.csv.gz).
 
-File with only Parler videos that came from military bases: [parler-videos-geocoded.csv](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-from-military.csv).
+File with only Parler videos that came from military bases: [parler-from-military.csv](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-from-military.csv).
