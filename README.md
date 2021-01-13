@@ -5,5 +5,7 @@ Uses geotagged Parler video metadata from [here](https://gist.github.com/kylemcd
 
 Code to produce the figures and underlying data included. Just open the .Rproj and run the .R script.
 
+
 Intersected Parler file: [parler-military-intersected.csv.gz](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-military-intersected.csv.gz).
+
 File with only Parler videos that came from military bases: [parler-videos-geocoded.csv](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-from-military.csv).
