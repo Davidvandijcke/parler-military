@@ -9,3 +9,9 @@ Code to produce the figures and underlying data included. Just open the .Rproj a
 Intersected Parler file: [parler-military-intersected.csv.gz](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-military-intersected.csv.gz).
 
 File with only Parler videos that came from military bases: [parler-from-military.csv](https://github.com/Davidvandijcke/parler-military/blob/main/data/parler-from-military.csv).
+
+Variables: 
+
+| Timestamp                 | ID                     | Longitude              | Latitude              | id                                                      |
+|---------------------------|------------------------|------------------------|-----------------------|---------------------------------------------------------|
+| Time the video was posted | Unique ID of the video | Longitude of the video | Latitude of the video | Unique id of the military base from where it was posted |
